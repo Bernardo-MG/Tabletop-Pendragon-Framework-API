@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.wandrell</groupId>
+	<artifactId>tabletop-pendragon-framework-api</artifactId>
+	<version>alpha</version>
+	<packaging>jar</packaging>
+
+	<name>Tabletop's Pendragon framework API</name>
+	<url></url>
+	<description>Framework API library for the RPG Pendragon, part of the Tabletop project.</description>
+
+	<licenses>
+		<license>
+			<name>Apache v2 License</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>scm:git:https://github.com/Bernardo-MG/Tabletop-Pendragon-Framework-API.git</connection>
+		<developerConnection>scm:git:https://github.com/Bernardo-MG/Tabletop-Pendragon-Framework-API.git</developerConnection>
+		<tag>head</tag>
+		<url>https://github.com/Bernardo-MG/Tabletop-Pendragon-Framework-API</url>
+	</scm>
+
+	<organization>
+		<name />
+		<url />
+	</organization>
+
+	<developers>
+		<developer>
+			<id>bmg</id>
+			<name>Bernardo Martínez Garrido</name>
+			<email>programming@wandrell.com</email>
+			<url />
+			<organization />
+			<organizationUrl />
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>+1</timezone>
+			<properties />
+		</developer>
+	</developers>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version.source>1.7</java.version.source>
+		<java.version.target>${java.version.source}</java.version.target>
+		<!-- Dependencies versions -->
+		<slf4j.version>1.7.7</slf4j.version>
+		<tabletop.version>alpha</tabletop.version>
+		<!-- Plugins versions -->
+		<plugin.cobertura.version>2.6</plugin.cobertura.version>
+		<plugin.compiler.version>3.1</plugin.compiler.version>
+		<plugin.jar.version>2.4</plugin.jar.version>
+		<plugin.javadoc.version>2.9.1</plugin.javadoc.version>
+		<plugin.reports.version>2.7</plugin.reports.version>
+		<plugin.resources.version>2.6</plugin.resources.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<!-- SLF4J API -->
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+		<dependency>
+			<!-- Tabletop API -->
+			<groupId>com.wandrell</groupId>
+			<artifactId>tabletop-api</artifactId>
+			<version>${tabletop.version}</version>
+		</dependency>
+		<dependency>
+			<!-- Tabletop's Pendragon API -->
+			<groupId>com.wandrell</groupId>
+			<artifactId>tabletop-pendragon-api</artifactId>
+			<version>${tabletop.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<defaultGoal>install</defaultGoal>
+		<plugins>
+			<plugin>
+				<!-- Compiler -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${plugin.compiler.version}</version>
+				<configuration>
+					<encoding>${project.build.sourceEncoding}</encoding>
+					<source>${java.version.source}</source>
+					<target>${java.version.target}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<!-- Jar -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>${plugin.jar.version}</version>
+				<configuration>
+					<archive>
+						<index>true</index>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<addExtensions>false</addExtensions>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+							<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+							<packageName>${project.groupId}</packageName>
+						</manifest>
+						<manifestEntries>
+							<name>com/wandrell/</name>
+							<url>${project.url}</url>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<!-- Javadoc -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>${plugin.javadoc.version}</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>javadoc</goal>
+							<goal>test-javadoc</goal>
+						</goals>
+						<phase>site</phase>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<!-- Resources -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>${plugin.resources.version}</version>
+			</plugin>
+			<plugin>
+				<!-- Project reports -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>${plugin.reports.version}</version>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
