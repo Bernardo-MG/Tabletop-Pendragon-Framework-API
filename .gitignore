@@ -42,6 +42,7 @@ tmp/**/*
 *.pydevproject
 local.properties
 /src/main/resources/rebel.xml
+.springBeans
 
 # Windows files #
 Thumbs.db
