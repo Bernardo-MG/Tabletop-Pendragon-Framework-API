@@ -17,6 +17,7 @@
 
 # Log files #
 /*.log
+/*.log.*
 
 # Output folders #
 /test-output/
