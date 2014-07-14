@@ -6,6 +6,6 @@ import com.wandrell.tabletop.pendragon.character.background.FamilyCharacteristic
 
 public interface FamilyCharacteristicDAO {
 
-    public Collection<FamilyCharacteristic> getCharacteristics();
+    public Collection<FamilyCharacteristic> getFamilyCharacteristics();
 
 }
