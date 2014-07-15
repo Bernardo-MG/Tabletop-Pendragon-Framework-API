@@ -4,6 +4,8 @@ public interface PendragonLocalizationService {
 
     public String getAdditionalBelongingsString(final String key);
 
+    public String getAttributeString(final String key);
+
     public String getButtonString(final String key);
 
     public String getDerivedAttributeString(final String key);
