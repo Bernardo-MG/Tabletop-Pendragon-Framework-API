@@ -6,6 +6,8 @@ import com.wandrell.tabletop.pendragon.valuehandler.PendragonSkill;
 
 public interface PendragonSkillModelService {
 
-    public Collection<PendragonSkill> getBaseSkills();
+    public Collection<PendragonSkill> getCombatSkills();
+
+    public Collection<PendragonSkill> getCommonNonCombatSkills();
 
 }
