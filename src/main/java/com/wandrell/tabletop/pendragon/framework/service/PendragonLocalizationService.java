@@ -10,6 +10,8 @@ public interface PendragonLocalizationService {
 
     public String getDerivedAttributeString(final String key);
 
+    public String getDescriptorString(final String key);
+
     public String getDirectedTraitString(final String key);
 
     public String getFamilyCharacteristicString(final String key);
