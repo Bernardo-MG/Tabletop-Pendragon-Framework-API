@@ -10,4 +10,6 @@ public interface PendragonSkillModelService {
 
     public Collection<PendragonSkill> getCommonNonCombatSkills();
 
+    public Collection<PendragonSkill> getRepeatableNonCombatSkills();
+
 }
