@@ -8,4 +8,6 @@ public interface PendragonPassionModelService {
 
     public Collection<PendragonPassion> getInitialPassions();
 
+    public Collection<PendragonPassion> getRepeatablePassions();
+
 }
