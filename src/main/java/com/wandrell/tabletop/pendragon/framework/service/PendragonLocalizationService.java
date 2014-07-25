@@ -24,6 +24,8 @@ public interface PendragonLocalizationService {
 
     public String getSkillString(final String key);
 
+    public String getSpecialtySkillString(final String key);
+
     public String getTitleString(final String key);
 
     public String getTraitString(final String key);
