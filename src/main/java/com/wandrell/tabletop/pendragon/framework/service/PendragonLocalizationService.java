@@ -8,6 +8,8 @@ public interface PendragonLocalizationService {
 
     public String getButtonString(final String key);
 
+    public String getCultureString(final String key);
+
     public String getDerivedAttributeString(final String key);
 
     public String getDescriptorString(final String key);
