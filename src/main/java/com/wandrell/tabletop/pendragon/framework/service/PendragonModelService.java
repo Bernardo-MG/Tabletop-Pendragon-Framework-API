@@ -2,25 +2,25 @@ package com.wandrell.tabletop.pendragon.framework.service;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.pendragon.valuehandler.PendragonDirectedTrait;
-import com.wandrell.tabletop.pendragon.valuehandler.PendragonPassion;
-import com.wandrell.tabletop.pendragon.valuehandler.PendragonSkill;
+import com.wandrell.tabletop.pendragon.valuehandler.DirectedTrait;
+import com.wandrell.tabletop.pendragon.valuehandler.Passion;
+import com.wandrell.tabletop.pendragon.valuehandler.Skill;
 
 public interface PendragonModelService {
 
     public Collection<String> getAttributeNames();
 
-    public Collection<PendragonSkill> getCombatSkills();
+    public Collection<Skill> getCombatSkills();
 
-    public Collection<PendragonSkill> getCommonNonCombatSkills();
+    public Collection<Skill> getCommonNonCombatSkills();
 
-    public Collection<PendragonDirectedTrait> getDirectedTraits();
+    public Collection<DirectedTrait> getDirectedTraits();
 
-    public Collection<PendragonPassion> getInitialPassions();
+    public Collection<Passion> getInitialPassions();
 
-    public Collection<PendragonSkill> getRepeatableNonCombatSkills();
+    public Collection<Skill> getRepeatableNonCombatSkills();
 
-    public Collection<PendragonPassion> getRepeatablePassions();
+    public Collection<Passion> getRepeatablePassions();
 
     public Collection<String> getTraitNames();
 
