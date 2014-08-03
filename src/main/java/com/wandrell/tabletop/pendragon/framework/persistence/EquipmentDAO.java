@@ -2,10 +2,10 @@ package com.wandrell.tabletop.pendragon.framework.persistence;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.pendragon.inventory.PendragonEquipment;
+import com.wandrell.tabletop.pendragon.inventory.Equipment;
 
 public interface EquipmentDAO {
 
-    public Collection<PendragonEquipment> getEquipment();
+    public Collection<Equipment> getEquipment();
 
 }
