@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.wandrell</groupId>
@@ -56,12 +57,19 @@
 		<slf4j.version>1.7.7</slf4j.version>
 		<tabletop.version>alpha</tabletop.version>
 		<!-- Plugins versions -->
+		<plugin.changelog.version>2.3</plugin.changelog.version>
+		<plugin.changes.version>2.10</plugin.changes.version>
+		<plugin.checkstyle.version>2.12.1</plugin.checkstyle.version>
 		<plugin.cobertura.version>2.6</plugin.cobertura.version>
 		<plugin.compiler.version>3.1</plugin.compiler.version>
 		<plugin.jar.version>2.4</plugin.jar.version>
 		<plugin.javadoc.version>2.9.1</plugin.javadoc.version>
+		<plugin.jxr.version>2.4</plugin.jxr.version>
+		<plugin.pmd.version>3.2</plugin.pmd.version>
 		<plugin.reports.version>2.7</plugin.reports.version>
-		<plugin.resources.version>2.6</plugin.resources.version>
+		<plugin.surefire.version>2.17</plugin.surefire.version>
+		<!-- Manifest data -->
+		<manifest.name>com/wandrell/tabletop/pendragon/framework/api</manifest.name>
 	</properties>
 
 	<dependencies>
@@ -84,6 +92,78 @@
 			<version>${tabletop.version}</version>
 		</dependency>
 	</dependencies>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<!-- Changelog -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-changelog-plugin</artifactId>
+				<version>${plugin.changelog.version}</version>
+			</plugin>
+			<plugin>
+				<!-- Changes -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-changes-plugin</artifactId>
+				<version>${plugin.changes.version}</version>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>changes-report</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+			<plugin>
+				<!-- Checkstyle -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<version>${plugin.checkstyle.version}</version>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>checkstyle</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+				<configuration>
+					<configLocation>src/checkstyle/checkstyle.xml</configLocation>
+				</configuration>
+			</plugin>
+			<plugin>
+				<!-- Javadoc -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>${plugin.javadoc.version}</version>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>javadoc</report>
+							<report>test-javadoc</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+			<plugin>
+				<!-- JXR -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jxr-plugin</artifactId>
+				<version>${plugin.jxr.version}</version>
+			</plugin>
+			<plugin>
+				<!-- PMD -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<version>${plugin.pmd.version}</version>
+			</plugin>
+			<plugin>
+				<!-- Reports -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>${plugin.reports.version}</version>
+			</plugin>
+		</plugins>
+	</reporting>
 
 	<build>
 		<defaultGoal>install</defaultGoal>
@@ -115,38 +195,11 @@
 							<packageName>${project.groupId}</packageName>
 						</manifest>
 						<manifestEntries>
-							<name>com/wandrell/</name>
+							<name>${manifest.name}</name>
 							<url>${project.url}</url>
 						</manifestEntries>
 					</archive>
 				</configuration>
-			</plugin>
-			<plugin>
-				<!-- Javadoc -->
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>${plugin.javadoc.version}</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>javadoc</goal>
-							<goal>test-javadoc</goal>
-						</goals>
-						<phase>site</phase>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<!-- Resources -->
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>${plugin.resources.version}</version>
-			</plugin>
-			<plugin>
-				<!-- Project reports -->
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-project-info-reports-plugin</artifactId>
-				<version>${plugin.reports.version}</version>
 			</plugin>
 		</plugins>
 	</build>
