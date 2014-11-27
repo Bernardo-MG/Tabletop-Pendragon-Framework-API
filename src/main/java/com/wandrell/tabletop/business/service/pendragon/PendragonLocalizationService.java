@@ -1,4 +1,4 @@
-package com.wandrell.tabletop.pendragon.framework.service;
+package com.wandrell.tabletop.business.service.pendragon;
 
 public interface PendragonLocalizationService {
 

@@ -1,8 +1,8 @@
-package com.wandrell.tabletop.pendragon.framework.persistence;
+package com.wandrell.tabletop.data.access.pendragon;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.dice.RollTable;
+import com.wandrell.tabletop.business.model.dice.RollTable;
 
 public interface RollTableDAO {
 

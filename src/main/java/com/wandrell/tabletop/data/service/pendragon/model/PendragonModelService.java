@@ -1,10 +1,10 @@
-package com.wandrell.tabletop.pendragon.framework.service;
+package com.wandrell.tabletop.data.service.pendragon.model;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.pendragon.valuehandler.DirectedTrait;
-import com.wandrell.tabletop.pendragon.valuehandler.Passion;
-import com.wandrell.tabletop.pendragon.valuehandler.Skill;
+import com.wandrell.tabletop.business.model.pendragon.valuehandler.DirectedTrait;
+import com.wandrell.tabletop.business.model.pendragon.valuehandler.Passion;
+import com.wandrell.tabletop.business.model.pendragon.valuehandler.Skill;
 
 public interface PendragonModelService {
 
