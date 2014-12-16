@@ -1,6 +1,6 @@
 package com.wandrell.tabletop.business.service.pendragon;
 
-public interface PendragonLocalizationService {
+public interface LocalizationService {
 
     public String getAdditionalBelongingsString(final String key);
 

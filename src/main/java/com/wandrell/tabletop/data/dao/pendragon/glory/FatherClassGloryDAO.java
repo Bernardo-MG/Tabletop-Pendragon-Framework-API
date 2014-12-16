@@ -1,4 +1,4 @@
-package com.wandrell.tabletop.data.access.pendragon;
+package com.wandrell.tabletop.data.dao.pendragon.glory;
 
 import java.util.Collection;
 
