@@ -2,12 +2,12 @@ package com.wandrell.tabletop.data.dao.pendragon.chargen;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.business.model.pendragon.chargen.HomelandBonus;
+import com.wandrell.tabletop.business.model.pendragon.chargen.HomelandTemplate;
 
 public interface HomelandBonusDAO {
 
-    public Collection<HomelandBonus> getHomelands();
+    public Collection<HomelandTemplate> getHomelands();
 
-    public void saveHomeland(final HomelandBonus homeland);
+    public void saveHomeland(final HomelandTemplate homeland);
 
 }

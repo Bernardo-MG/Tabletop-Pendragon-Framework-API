@@ -2,12 +2,12 @@ package com.wandrell.tabletop.data.dao.pendragon.chargen;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.business.model.pendragon.chargen.FatherClassBonus;
+import com.wandrell.tabletop.business.model.pendragon.chargen.FatherClassTemplate;
 
 public interface FatherClassBonusDAO {
 
-    public Collection<FatherClassBonus> getFatherClasses();
+    public Collection<FatherClassTemplate> getFatherClasses();
 
-    public void saveFatherClass(final FatherClassBonus fatherClass);
+    public void saveFatherClass(final FatherClassTemplate fatherClass);
 
 }

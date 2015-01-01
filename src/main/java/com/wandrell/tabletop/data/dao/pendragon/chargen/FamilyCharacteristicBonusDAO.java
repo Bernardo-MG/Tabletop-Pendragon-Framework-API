@@ -2,13 +2,13 @@ package com.wandrell.tabletop.data.dao.pendragon.chargen;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.business.model.pendragon.chargen.FamilyCharacteristicBonus;
+import com.wandrell.tabletop.business.model.pendragon.chargen.FamilyCharacteristicTemplate;
 
 public interface FamilyCharacteristicBonusDAO {
 
-    public Collection<FamilyCharacteristicBonus> getFamilyCharacteristics();
+    public Collection<FamilyCharacteristicTemplate> getFamilyCharacteristics();
 
     public void saveFamilyCharacteristic(
-            final FamilyCharacteristicBonus characteristic);
+            final FamilyCharacteristicTemplate characteristic);
 
 }
