@@ -5,6 +5,7 @@ public final class ModelXMLConf {
     public static final String ARMOR_BONUS                = "armor_bonus";
     public static final String ATTRIBUTES                 = "attributes";
     public static final String BASE                       = "base";
+    public static final String BASE_GLORY                 = "base_glory";
     public static final String BONUS                      = "bonus";
     public static final String DAMAGE_BONUS               = "damage_bonus";
     public static final String DAMAGE_DICE_BONUS          = "damage_dice_bonus";
@@ -26,6 +27,7 @@ public final class ModelXMLConf {
     public static final String SPECIALTY_SKILLS           = "specialty_skills";
     public static final String TRAITS                     = "traits";
     public static final String VALUE                      = "value";
+    public static final String YEARLY_GLORY               = "yearly_glory";
 
     private ModelXMLConf() {
         super();

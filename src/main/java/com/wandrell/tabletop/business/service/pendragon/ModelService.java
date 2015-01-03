@@ -10,6 +10,7 @@ import com.wandrell.tabletop.business.model.pendragon.chargen.FamilyCharacterist
 import com.wandrell.tabletop.business.model.pendragon.chargen.FatherClassTemplate;
 import com.wandrell.tabletop.business.model.pendragon.chargen.HomelandTemplate;
 import com.wandrell.tabletop.business.model.pendragon.chargen.ReligionTemplate;
+import com.wandrell.tabletop.business.model.pendragon.glory.FatherClassGlory;
 import com.wandrell.tabletop.business.model.skill.NameAndDescriptor;
 
 public interface ModelService {
@@ -21,6 +22,9 @@ public interface ModelService {
     public FamilyCharacteristicTemplate getFamilyCharacteristicTemplate(
             final String name, final Map<String, Integer> attributes,
             final Map<NameAndDescriptor, Integer> skills);
+
+    public FatherClassGlory getFatherClassGlory(final String name,
+            final Integer glory, final Integer yearlyGlory);
 
     public FatherClassTemplate getFatherClassTemplate(final String name,
             final Integer skillsGroupPoints,
