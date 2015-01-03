@@ -3,9 +3,11 @@ package com.wandrell.tabletop.business.service.pendragon;
 import java.util.Collection;
 import java.util.Map;
 
+import com.wandrell.tabletop.business.model.dice.Dice;
 import com.wandrell.tabletop.business.model.interval.Interval;
 import com.wandrell.tabletop.business.model.pendragon.chargen.FamilyCharacteristicTable;
 import com.wandrell.tabletop.business.model.pendragon.chargen.FamilyCharacteristicTemplate;
+import com.wandrell.tabletop.business.model.pendragon.chargen.FatherClassTemplate;
 import com.wandrell.tabletop.business.model.pendragon.chargen.HomelandTemplate;
 import com.wandrell.tabletop.business.model.pendragon.chargen.ReligionTemplate;
 import com.wandrell.tabletop.business.model.skill.NameAndDescriptor;
@@ -19,6 +21,15 @@ public interface ModelService {
     public FamilyCharacteristicTemplate getFamilyCharacteristicTemplate(
             final String name, final Map<String, Integer> attributes,
             final Map<NameAndDescriptor, Integer> skills);
+
+    public FatherClassTemplate getFatherClassTemplate(final String name,
+            final Integer skillsGroupPoints,
+            final Integer skillsGroupPointsDivide, final Integer skillsPoints,
+            final Integer skillsNonCombatPoints, final Dice money,
+            final Collection<NameAndDescriptor> skillsGroup,
+            final Map<String, Integer> specialtySkills,
+            final Map<NameAndDescriptor, Integer> directedTraits,
+            final Map<NameAndDescriptor, Integer> directedTraitsBase);
 
     public HomelandTemplate getHomelandTemplate(final String name,
             final Map<NameAndDescriptor, Integer> skills,
