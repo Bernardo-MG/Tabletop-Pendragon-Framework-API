@@ -27,6 +27,7 @@ public final class ModelXMLConf {
     public static final String SPECIALTY_SKILLS           = "specialty_skills";
     public static final String TRAITS                     = "traits";
     public static final String VALUE                      = "value";
+    public static final String VALUES                     = "values";
     public static final String YEARLY_GLORY               = "yearly_glory";
 
     private ModelXMLConf() {
