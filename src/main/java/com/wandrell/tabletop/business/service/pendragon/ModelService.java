@@ -11,6 +11,7 @@ import com.wandrell.tabletop.business.model.pendragon.chargen.FatherClassTemplat
 import com.wandrell.tabletop.business.model.pendragon.chargen.HomelandTemplate;
 import com.wandrell.tabletop.business.model.pendragon.chargen.ReligionTemplate;
 import com.wandrell.tabletop.business.model.pendragon.glory.FatherClassGlory;
+import com.wandrell.tabletop.business.model.pendragon.stats.Skill;
 import com.wandrell.tabletop.business.model.pendragon.stats.SpecialtySkill;
 import com.wandrell.tabletop.business.model.pendragon.util.TextList;
 import com.wandrell.tabletop.business.model.skill.NameAndDescriptor;
@@ -48,6 +49,10 @@ public interface ModelService {
             final Collection<String> traits,
             final Map<String, Integer> bonusDerived, final Integer bonusArmor,
             final Integer bonusDamage, final Integer bonusDamageDice);
+
+    public Skill getSkill(final String name, final String descriptor,
+            final Boolean combat, final Boolean court, final Boolean knight,
+            final Boolean knowledge, final Boolean repeat);
 
     public SpecialtySkill getSpecialtySkill(final String name,
             final Collection<String> skills);

@@ -7,6 +7,8 @@ public final class ModelXMLConf {
     public static final String BASE                       = "base";
     public static final String BASE_GLORY                 = "base_glory";
     public static final String BONUS                      = "bonus";
+    public static final String COMBAT                     = "combat";
+    public static final String COURTLY                    = "courtly";
     public static final String DAMAGE_BONUS               = "damage_bonus";
     public static final String DAMAGE_DICE_BONUS          = "damage_dice_bonus";
     public static final String DERIVED_ATTRIBUTES         = "derived_attributes";
@@ -14,10 +16,13 @@ public final class ModelXMLConf {
     public static final String DIRECTED_TRAITS            = "directed_traits";
     public static final String FAMILY_CHARACTERISTIC      = "family_characteristic";
     public static final String INTERVALS                  = "intervals";
+    public static final String KNIGHTLY                   = "knightly";
+    public static final String KNOWLEDGE                  = "knowledge";
     public static final String LOWER_LIMIT                = "lower_limit";
     public static final String MONEY                      = "money";
     public static final String NAME                       = "name";
     public static final String PASSIONS                   = "passions";
+    public static final String REPEATEABLE                = "repeatable";
     public static final String SKILLS                     = "skills";
     public static final String SKILLS_GROUP               = "skills_group";
     public static final String SKILLS_GROUP_POINTS_BONUS  = "skills_points_group_bonus";
