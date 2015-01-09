@@ -11,6 +11,7 @@ import com.wandrell.tabletop.business.model.pendragon.chargen.FatherClassTemplat
 import com.wandrell.tabletop.business.model.pendragon.chargen.HomelandTemplate;
 import com.wandrell.tabletop.business.model.pendragon.chargen.ReligionTemplate;
 import com.wandrell.tabletop.business.model.pendragon.glory.FatherClassGlory;
+import com.wandrell.tabletop.business.model.pendragon.stats.Passion;
 import com.wandrell.tabletop.business.model.pendragon.stats.Skill;
 import com.wandrell.tabletop.business.model.pendragon.stats.SpecialtySkill;
 import com.wandrell.tabletop.business.model.pendragon.util.TextList;
@@ -44,6 +45,9 @@ public interface ModelService {
             final Map<String, Integer> traits,
             final Collection<NameAndDescriptor> directedTraits,
             final Collection<NameAndDescriptor> passions);
+
+    public Passion getPassion(final String name, final String descriptor,
+            final Boolean repeatable);
 
     public ReligionTemplate getReligionTemplate(final String name,
             final Collection<String> traits,
