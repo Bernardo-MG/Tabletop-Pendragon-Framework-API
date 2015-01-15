@@ -5,6 +5,7 @@ import java.util.Map;
 
 import com.wandrell.tabletop.business.model.dice.Dice;
 import com.wandrell.tabletop.business.model.interval.Interval;
+import com.wandrell.tabletop.business.model.interval.IntervalTable;
 import com.wandrell.tabletop.business.model.pendragon.chargen.FamilyCharacteristicTable;
 import com.wandrell.tabletop.business.model.pendragon.chargen.FamilyCharacteristicTemplate;
 import com.wandrell.tabletop.business.model.pendragon.chargen.FatherClassTemplate;
@@ -17,6 +18,8 @@ import com.wandrell.tabletop.business.model.pendragon.inventory.Item;
 import com.wandrell.tabletop.business.model.pendragon.inventory.Money;
 import com.wandrell.tabletop.business.model.pendragon.inventory.Shield;
 import com.wandrell.tabletop.business.model.pendragon.inventory.Weapon;
+import com.wandrell.tabletop.business.model.pendragon.manor.AnimalYearResult;
+import com.wandrell.tabletop.business.model.pendragon.manor.Pet;
 import com.wandrell.tabletop.business.model.pendragon.stats.DirectedTrait;
 import com.wandrell.tabletop.business.model.pendragon.stats.Passion;
 import com.wandrell.tabletop.business.model.pendragon.stats.Skill;
@@ -25,6 +28,10 @@ import com.wandrell.tabletop.business.model.pendragon.util.TextList;
 import com.wandrell.tabletop.business.model.skill.NameAndDescriptor;
 
 public interface ModelService {
+
+    public AnimalYearResult getAnimalYearResult(final String description,
+            final String puppy, final Boolean dies, final Integer libra,
+            final Integer denarii);
 
     public Armor getArmor(final String name, final String description,
             final Money money, final ArmorType type, final Integer armorValue,
@@ -65,6 +72,9 @@ public interface ModelService {
 
     public Passion getPassion(final String name, final String descriptor,
             final Boolean repeatable);
+
+    public Pet getPet(final String name,
+            final IntervalTable<AnimalYearResult> yearResults);
 
     public ReligionTemplate getReligionTemplate(final String name,
             final Collection<String> traits,
