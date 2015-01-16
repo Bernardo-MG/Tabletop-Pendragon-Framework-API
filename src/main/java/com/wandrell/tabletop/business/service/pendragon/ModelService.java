@@ -6,6 +6,7 @@ import java.util.Map;
 import com.wandrell.tabletop.business.model.dice.Dice;
 import com.wandrell.tabletop.business.model.interval.Interval;
 import com.wandrell.tabletop.business.model.interval.IntervalTable;
+import com.wandrell.tabletop.business.model.pendragon.character.HorseCharacter;
 import com.wandrell.tabletop.business.model.pendragon.chargen.FamilyCharacteristicTable;
 import com.wandrell.tabletop.business.model.pendragon.chargen.FamilyCharacteristicTemplate;
 import com.wandrell.tabletop.business.model.pendragon.chargen.FatherClassTemplate;
@@ -65,6 +66,12 @@ public interface ModelService {
             final Map<String, Integer> traits,
             final Collection<NameAndDescriptor> directedTraits,
             final Collection<NameAndDescriptor> passions);
+
+    public HorseCharacter getHorse(final String type,
+            final Integer constitution, final Integer dexterity,
+            final Integer size, final Integer strength, final Integer damage,
+            final Integer movement, final Integer armor, final Boolean armored,
+            final Boolean combat, final Boolean hunting);
 
     public Item getItem(final String name, final String description);
 
