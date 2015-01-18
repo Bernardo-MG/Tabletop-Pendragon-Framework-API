@@ -21,8 +21,6 @@ import com.wandrell.tabletop.business.model.pendragon.inventory.Shield;
 import com.wandrell.tabletop.business.model.pendragon.inventory.Weapon;
 import com.wandrell.tabletop.business.model.pendragon.manor.AnimalYearResult;
 import com.wandrell.tabletop.business.model.pendragon.manor.Pet;
-import com.wandrell.tabletop.business.model.pendragon.stats.DirectedTrait;
-import com.wandrell.tabletop.business.model.pendragon.stats.Passion;
 import com.wandrell.tabletop.business.model.pendragon.stats.Skill;
 import com.wandrell.tabletop.business.model.pendragon.stats.SpecialtySkill;
 import com.wandrell.tabletop.business.model.pendragon.util.TextList;
@@ -37,8 +35,6 @@ public interface ModelService {
     public Armor getArmor(final String name, final String description,
             final Money money, final ArmorType type, final Integer armorValue,
             final Integer dexModifier, final Boolean heavyLoad);
-
-    public DirectedTrait getDirectedTrait(final String name);
 
     public FamilyCharacteristicTable getFamilyCharacteristicTable(
             final String name,
@@ -76,9 +72,6 @@ public interface ModelService {
     public Item getItem(final String name, final String description);
 
     public Money getMoney(final Integer denarii, final Integer libra);
-
-    public Passion getPassion(final String name, final String descriptor,
-            final Boolean repeatable);
 
     public Pet getPet(final String name,
             final IntervalTable<AnimalYearResult> yearResults);

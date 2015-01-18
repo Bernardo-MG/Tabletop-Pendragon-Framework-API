@@ -2,19 +2,18 @@ package com.wandrell.tabletop.business.service.pendragon;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.business.model.pendragon.stats.DirectedTrait;
-import com.wandrell.tabletop.business.model.pendragon.stats.Passion;
 import com.wandrell.tabletop.business.model.pendragon.stats.Skill;
+import com.wandrell.tabletop.business.model.valuebox.SkillBox;
 
 public interface StatsService {
 
     public Collection<Skill> getCombatSkills();
 
-    public Collection<DirectedTrait> getDirectedTraits();
+    public Collection<SkillBox> getDirectedTraits();
 
-    public Collection<Passion> getPassions();
+    public Collection<SkillBox> getPassions();
 
-    public Collection<Passion> getRepeatablePassions();
+    public Collection<SkillBox> getRepeatablePassions();
 
     public Collection<Skill> getRepeatableSkills();
 
