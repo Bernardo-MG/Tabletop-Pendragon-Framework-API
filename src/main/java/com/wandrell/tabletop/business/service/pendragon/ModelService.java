@@ -7,6 +7,8 @@ import com.wandrell.tabletop.business.model.dice.Dice;
 import com.wandrell.tabletop.business.model.interval.Interval;
 import com.wandrell.tabletop.business.model.interval.IntervalTable;
 import com.wandrell.tabletop.business.model.pendragon.character.HorseCharacter;
+import com.wandrell.tabletop.business.model.pendragon.chargen.AdditionalBelongings;
+import com.wandrell.tabletop.business.model.pendragon.chargen.AdditionalBelongingsTable;
 import com.wandrell.tabletop.business.model.pendragon.chargen.FamilyCharacteristicTable;
 import com.wandrell.tabletop.business.model.pendragon.chargen.FamilyCharacteristicTemplate;
 import com.wandrell.tabletop.business.model.pendragon.chargen.FatherClassTemplate;
@@ -27,6 +29,17 @@ import com.wandrell.tabletop.business.model.pendragon.util.TextList;
 import com.wandrell.tabletop.business.model.skill.NameAndDescriptor;
 
 public interface ModelService {
+
+    public AdditionalBelongings getAdditionaBelongings(final Boolean choose,
+            final String moneyName, final Integer libra, final Integer denarii,
+            final String rerollTable, final Collection<Dice> dice,
+            final Collection<HorseCharacter> horses,
+            final Collection<Item> items, final Collection<Pet> pets,
+            final Collection<Shield> shields, final Collection<Weapon> weapons);
+
+    public AdditionalBelongingsTable getAdditionalBelongingsTable(
+            final String name,
+            final Map<Interval, AdditionalBelongings> intervalsMap);
 
     public AnimalYearResult getAnimalYearResult(final String description,
             final String puppy, final Boolean dies, final Integer libra,
