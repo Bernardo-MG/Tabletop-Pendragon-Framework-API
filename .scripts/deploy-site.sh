@@ -1,6 +1,6 @@
 #!/bin/bash
 # This script deploys the Maven site using the POM cofiguration
-# Only commits to the master branch, and no pull, trigger the deploy
+# It is triggered only commits to the master branch. Pulls are ignored
 
 if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
 
