@@ -9,6 +9,8 @@ import com.wandrell.tabletop.business.model.interval.IntervalTable;
 import com.wandrell.tabletop.business.model.pendragon.character.HorseCharacter;
 import com.wandrell.tabletop.business.model.pendragon.chargen.AdditionalBelongings;
 import com.wandrell.tabletop.business.model.pendragon.chargen.AdditionalBelongingsTable;
+import com.wandrell.tabletop.business.model.pendragon.chargen.CultureCharacterTemplate;
+import com.wandrell.tabletop.business.model.pendragon.chargen.CultureTemplate;
 import com.wandrell.tabletop.business.model.pendragon.chargen.FamilyCharacteristicTable;
 import com.wandrell.tabletop.business.model.pendragon.chargen.FamilyCharacteristicTemplate;
 import com.wandrell.tabletop.business.model.pendragon.chargen.FatherClassTemplate;
@@ -48,6 +50,24 @@ public interface ModelService {
     public Armor getArmor(final String name, final String description,
             final Money money, final ArmorType type, final Integer armorValue,
             final Integer dexModifier, final Boolean heavyLoad);
+
+    public CultureCharacterTemplate getCultureCharacterTemplate(
+            final Map<String, Integer> attributesBonus,
+            final Map<String, Dice> attributesRandom,
+            final Map<NameAndDescriptor, Integer> skillsBonus,
+            final Map<String, Integer> specialtySkills,
+            final Map<NameAndDescriptor, Integer> passionsBonus,
+            final Map<NameAndDescriptor, Dice> passionsRandom,
+            final Map<NameAndDescriptor, Integer> directedBonus,
+            final Map<String, Integer> traitsBonus);
+
+    public CultureTemplate getCultureTemplate(final String name,
+            final FamilyCharacteristicTemplate charMale,
+            final FamilyCharacteristicTemplate charFemale,
+            final AdditionalBelongingsTable belonginsMale,
+            final AdditionalBelongingsTable belonginsFemale,
+            final CultureCharacterTemplate templateMale,
+            final CultureCharacterTemplate templateFemale);
 
     public FamilyCharacteristicTable getFamilyCharacteristicTable(
             final String name,
