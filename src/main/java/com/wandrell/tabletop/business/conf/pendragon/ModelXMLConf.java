@@ -38,7 +38,6 @@ public final class ModelXMLConf {
     public static final String HORSES                     = "horses";
     public static final String HUNTING                    = "hunting";
     public static final String IGNORES_SHIELD             = "ignores_shield";
-    public static final String INTERVAL                   = "interval";
     public static final String INTERVALS                  = "intervals";
     public static final String ITEMS                      = "items";
     public static final String KNIGHTLY                   = "knightly";
@@ -73,7 +72,6 @@ public final class ModelXMLConf {
     public static final String TRAITS                     = "traits";
     public static final String TWO_HANDED                 = "two_handed";
     public static final String TYPE                       = "type";
-    public static final String UPPER_LIMIT                = "upper_limit";
     public static final String VALUE                      = "value";
     public static final String VALUES                     = "values";
     public static final String VS_ARMOR_BONUS             = "vs_armor_bonus";
