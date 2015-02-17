@@ -1,34 +1,34 @@
-package com.wandrell.tabletop.business.service.pendragon;
+package com.wandrell.tabletop.pendragon.service;
 
 import java.util.Collection;
 import java.util.Map;
 
-import com.wandrell.tabletop.business.model.dice.Dice;
-import com.wandrell.tabletop.business.model.interval.Interval;
-import com.wandrell.tabletop.business.model.interval.IntervalTable;
-import com.wandrell.tabletop.business.model.pendragon.character.Horse;
-import com.wandrell.tabletop.business.model.pendragon.chargen.AdditionalBelongings;
-import com.wandrell.tabletop.business.model.pendragon.chargen.AdditionalBelongingsTable;
-import com.wandrell.tabletop.business.model.pendragon.chargen.CultureCharacterTemplate;
-import com.wandrell.tabletop.business.model.pendragon.chargen.CultureTemplate;
-import com.wandrell.tabletop.business.model.pendragon.chargen.FamilyCharacteristicTable;
-import com.wandrell.tabletop.business.model.pendragon.chargen.FamilyCharacteristicTemplate;
-import com.wandrell.tabletop.business.model.pendragon.chargen.FatherClassTemplate;
-import com.wandrell.tabletop.business.model.pendragon.chargen.HomelandTemplate;
-import com.wandrell.tabletop.business.model.pendragon.chargen.ReligionTemplate;
-import com.wandrell.tabletop.business.model.pendragon.glory.FatherClassGlory;
-import com.wandrell.tabletop.business.model.pendragon.inventory.Armor;
-import com.wandrell.tabletop.business.model.pendragon.inventory.ArmorType;
-import com.wandrell.tabletop.business.model.pendragon.inventory.Item;
-import com.wandrell.tabletop.business.model.pendragon.inventory.Money;
-import com.wandrell.tabletop.business.model.pendragon.inventory.Shield;
-import com.wandrell.tabletop.business.model.pendragon.inventory.Weapon;
-import com.wandrell.tabletop.business.model.pendragon.manor.AnimalYearResult;
-import com.wandrell.tabletop.business.model.pendragon.manor.Pet;
-import com.wandrell.tabletop.business.model.pendragon.stats.Skill;
-import com.wandrell.tabletop.business.model.pendragon.stats.SpecialtySkill;
-import com.wandrell.tabletop.business.model.pendragon.util.TextList;
-import com.wandrell.tabletop.business.model.skill.NameAndDescriptor;
+import com.wandrell.tabletop.dice.Dice;
+import com.wandrell.tabletop.interval.Interval;
+import com.wandrell.tabletop.interval.IntervalTable;
+import com.wandrell.tabletop.pendragon.model.character.Horse;
+import com.wandrell.tabletop.pendragon.model.chargen.AdditionalBelongings;
+import com.wandrell.tabletop.pendragon.model.chargen.AdditionalBelongingsTable;
+import com.wandrell.tabletop.pendragon.model.chargen.CultureCharacterTemplate;
+import com.wandrell.tabletop.pendragon.model.chargen.CultureTemplate;
+import com.wandrell.tabletop.pendragon.model.chargen.FamilyCharacteristicTable;
+import com.wandrell.tabletop.pendragon.model.chargen.FamilyCharacteristicTemplate;
+import com.wandrell.tabletop.pendragon.model.chargen.FatherClassTemplate;
+import com.wandrell.tabletop.pendragon.model.chargen.HomelandTemplate;
+import com.wandrell.tabletop.pendragon.model.chargen.ReligionTemplate;
+import com.wandrell.tabletop.pendragon.model.glory.FatherClassGlory;
+import com.wandrell.tabletop.pendragon.model.inventory.Armor;
+import com.wandrell.tabletop.pendragon.model.inventory.ArmorType;
+import com.wandrell.tabletop.pendragon.model.inventory.Item;
+import com.wandrell.tabletop.pendragon.model.inventory.Money;
+import com.wandrell.tabletop.pendragon.model.inventory.Shield;
+import com.wandrell.tabletop.pendragon.model.inventory.Weapon;
+import com.wandrell.tabletop.pendragon.model.manor.AnimalYearResult;
+import com.wandrell.tabletop.pendragon.model.manor.Pet;
+import com.wandrell.tabletop.pendragon.model.stats.Skill;
+import com.wandrell.tabletop.pendragon.model.stats.SpecialtySkill;
+import com.wandrell.tabletop.pendragon.model.util.TextList;
+import com.wandrell.tabletop.skill.NameAndDescriptor;
 
 public interface ModelService {
 

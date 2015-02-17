@@ -1,4 +1,4 @@
-package com.wandrell.tabletop.business.conf.pendragon;
+package com.wandrell.tabletop.pendragon.conf;
 
 public final class ModelXMLConf {
 

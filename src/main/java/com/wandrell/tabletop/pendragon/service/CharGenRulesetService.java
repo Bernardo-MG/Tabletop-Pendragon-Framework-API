@@ -1,6 +1,6 @@
-package com.wandrell.tabletop.business.service.pendragon;
+package com.wandrell.tabletop.pendragon.service;
 
-import com.wandrell.tabletop.business.model.character.Gender;
+import com.wandrell.tabletop.character.Gender;
 
 public interface CharGenRulesetService {
 

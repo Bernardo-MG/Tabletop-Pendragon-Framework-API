@@ -1,9 +1,9 @@
-package com.wandrell.tabletop.business.service.pendragon;
+package com.wandrell.tabletop.pendragon.service;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.business.model.pendragon.stats.Skill;
-import com.wandrell.tabletop.business.model.valuebox.SkillBox;
+import com.wandrell.tabletop.pendragon.model.stats.Skill;
+import com.wandrell.tabletop.valuebox.SkillBox;
 
 public interface StatsService {
 

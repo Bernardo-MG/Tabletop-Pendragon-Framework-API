@@ -1,4 +1,4 @@
-package com.wandrell.tabletop.business.procedure.pendragon.chargen;
+package com.wandrell.tabletop.pendragon.procedure.chargen;
 
 public enum CharGenSection {
     ATTRIBUTES_DISTRIBUTION, DIRECTED_TRAITS, PASSIONS_DISTRIBUTION,

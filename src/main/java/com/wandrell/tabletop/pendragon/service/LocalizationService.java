@@ -1,4 +1,4 @@
-package com.wandrell.tabletop.business.service.pendragon;
+package com.wandrell.tabletop.pendragon.service;
 
 public interface LocalizationService {
 
