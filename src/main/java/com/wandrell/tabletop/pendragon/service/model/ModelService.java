@@ -1,4 +1,4 @@
-package com.wandrell.tabletop.pendragon.service;
+package com.wandrell.tabletop.pendragon.service.model;
 
 import java.util.Collection;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.wandrell.tabletop.pendragon.service;
+package com.wandrell.tabletop.pendragon.service.chargen;
 
 import com.wandrell.tabletop.character.Gender;
 
