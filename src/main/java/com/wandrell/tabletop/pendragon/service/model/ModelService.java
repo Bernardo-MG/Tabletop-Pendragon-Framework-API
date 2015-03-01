@@ -33,8 +33,8 @@ import com.wandrell.tabletop.skill.NameAndDescriptor;
 public interface ModelService {
 
     public AdditionalBelongings getAdditionaBelongings(final Boolean choose,
-            final String moneyName, final Integer libra, final Integer denarii,
-            final String rerollTable, final Collection<Dice> dice,
+            final String moneyName, final Money money,
+            final String rerollTable, final Collection<Dice> rerolls,
             final Collection<Horse> horses, final Collection<Item> items,
             final Collection<Pet> pets, final Collection<Shield> shields,
             final Collection<Weapon> weapons);
@@ -44,8 +44,7 @@ public interface ModelService {
             final Map<Interval, AdditionalBelongings> intervalsMap);
 
     public AnimalYearResult getAnimalYearResult(final String description,
-            final String puppy, final Boolean dies, final Integer libra,
-            final Integer denarii);
+            final String puppy, final Boolean dies, final Money money);
 
     public Armor getArmor(final String name, final String description,
             final Money money, final ArmorType type, final Integer armorValue,
@@ -115,11 +114,11 @@ public interface ModelService {
             final Integer bonusDamage, final Integer bonusDamageDice);
 
     public Shield getShield(final String name, final String description,
-            final Money money, final Integer armorValue);
+            final Integer armorValue);
 
     public Skill getSkill(final String name, final String descriptor,
             final Boolean combat, final Boolean court, final Boolean knight,
-            final Boolean knowledge, final Boolean repeat);
+            final Boolean knowledge);
 
     public SpecialtySkill getSpecialtySkill(final String name,
             final Collection<String> skills);
@@ -128,10 +127,10 @@ public interface ModelService {
             final Collection<String> values);
 
     public Weapon getWeapon(final String name, final String description,
-            final Money money, final String skill, final Boolean twoHanded,
+            final String skill, final Boolean twoHanded,
             final Integer damageBonus, final Integer diceBonus,
             final Integer damageOverride, final Integer maxRange,
-            final Integer rof, final Map<ArmorType, Integer> armorBonus,
+            final Integer reload, final Map<ArmorType, Integer> armorBonus,
             final Boolean breaksEnemyOnDraw, final Boolean breaksOnFumble,
             final Boolean hitsBack, final Boolean ignoresShield,
             final Boolean reducesShieldToRoll);

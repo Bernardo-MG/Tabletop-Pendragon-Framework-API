@@ -4,6 +4,6 @@ public interface TraitsAchievementService {
 
     public Integer getTraitTreshold();
 
-    public Boolean isAchievementTrait(final String trait);
+    public Boolean isBonusTrait(final String trait);
 
 }

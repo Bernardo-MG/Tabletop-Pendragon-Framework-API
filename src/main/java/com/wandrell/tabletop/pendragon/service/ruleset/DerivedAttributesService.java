@@ -18,6 +18,14 @@ public interface DerivedAttributesService {
             final Integer constitution, final Integer dexterity,
             final Integer size, final Integer strength);
 
+    public Integer getKnockdown(final Integer appearance,
+            final Integer constitution, final Integer dexterity,
+            final Integer size, final Integer strength);
+
+    public Integer getMajorWound(final Integer appearance,
+            final Integer constitution, final Integer dexterity,
+            final Integer size, final Integer strength);
+
     public Integer getMoveRate(final Integer appearance,
             final Integer constitution, final Integer dexterity,
             final Integer size, final Integer strength);
