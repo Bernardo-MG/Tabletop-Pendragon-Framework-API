@@ -5,7 +5,7 @@ import com.wandrell.tabletop.pendragon.model.stats.Skill;
 
 public interface CharGenRulesetService {
 
-    public Boolean canAddIndividualDifference(final Skill skill,
+    public Boolean canAddIndividualDifferenceSkill(final Skill skill,
             final Gender gender);
 
     public Boolean canBecomeExcellentSkill(final Skill skill,
