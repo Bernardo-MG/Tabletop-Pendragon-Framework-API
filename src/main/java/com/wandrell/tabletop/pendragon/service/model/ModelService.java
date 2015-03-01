@@ -116,9 +116,9 @@ public interface ModelService {
     public Shield getShield(final String name, final String description,
             final Integer armorValue);
 
-    public Skill getSkill(final String name, final String descriptor,
-            final Boolean combat, final Boolean court, final Boolean knight,
-            final Boolean knowledge);
+    public Skill getSkill(final String name, final Boolean described,
+            final String descriptor, final Boolean combat, final Boolean court,
+            final Boolean knight, final Boolean knowledge);
 
     public SpecialtySkill getSpecialtySkill(final String name,
             final Collection<String> skills);
