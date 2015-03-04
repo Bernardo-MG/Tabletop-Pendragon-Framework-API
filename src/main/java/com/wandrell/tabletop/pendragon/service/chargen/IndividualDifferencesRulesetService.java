@@ -1,6 +1,6 @@
 package com.wandrell.tabletop.pendragon.service.chargen;
 
-import com.wandrell.tabletop.pendragon.model.stats.Skill;
+import com.wandrell.tabletop.pendragon.model.stats.PendragonSkillBox;
 
 public interface IndividualDifferencesRulesetService {
 
@@ -14,10 +14,10 @@ public interface IndividualDifferencesRulesetService {
 
     public Integer getSkillRaiseValue();
 
-    public Boolean isAbleToBecomeExcellentSkill(final Skill skill);
+    public Boolean isAbleToBecomeExcellentSkill(final PendragonSkillBox skill);
 
-    public Boolean isAbleToBecomeExtraSkill(final Skill skill);
+    public Boolean isAbleToBecomeExtraSkill(final PendragonSkillBox skill);
 
-    public Boolean isAbleToGetSkillRaise(final Skill skill);
+    public Boolean isAbleToGetSkillRaise(final PendragonSkillBox skill);
 
 }

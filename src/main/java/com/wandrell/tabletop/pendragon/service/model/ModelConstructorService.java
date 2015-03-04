@@ -26,10 +26,10 @@ import com.wandrell.tabletop.pendragon.model.inventory.Shield;
 import com.wandrell.tabletop.pendragon.model.inventory.Weapon;
 import com.wandrell.tabletop.pendragon.model.manor.AnimalYearResult;
 import com.wandrell.tabletop.pendragon.model.manor.Pet;
-import com.wandrell.tabletop.pendragon.model.stats.Skill;
-import com.wandrell.tabletop.pendragon.model.stats.SpecialtySkill;
+import com.wandrell.tabletop.pendragon.model.stats.PendragonSkillBox;
+import com.wandrell.tabletop.pendragon.model.stats.SpecialtySkillBox;
 import com.wandrell.tabletop.pendragon.model.util.TextList;
-import com.wandrell.tabletop.skill.NameAndDescriptor;
+import com.wandrell.tabletop.skill.SkillName;
 
 public interface ModelConstructorService {
 
@@ -54,11 +54,11 @@ public interface ModelConstructorService {
     public CultureCharacterTemplate getCultureCharacterTemplate(
             final Map<String, Integer> attributesBonus,
             final Map<String, Dice> attributesRandom,
-            final Map<NameAndDescriptor, Integer> skillsBonus,
+            final Map<SkillName, Integer> skillsBonus,
             final Map<String, Integer> specialtySkills,
-            final Map<NameAndDescriptor, Integer> passionsBonus,
-            final Map<NameAndDescriptor, Dice> passionsRandom,
-            final Map<NameAndDescriptor, Integer> directedBonus,
+            final Map<SkillName, Integer> passionsBonus,
+            final Map<SkillName, Dice> passionsRandom,
+            final Map<SkillName, Integer> directedBonus,
             final Map<String, Integer> traitsBonus);
 
     public CultureTemplate getCultureTemplate(final String name,
@@ -75,7 +75,7 @@ public interface ModelConstructorService {
 
     public FamilyCharacteristicTemplate getFamilyCharacteristicTemplate(
             final String name, final Map<String, Integer> attributes,
-            final Map<NameAndDescriptor, Integer> skills);
+            final Map<SkillName, Integer> skills);
 
     public FatherClassGlory getFatherClassGlory(final String name,
             final Integer glory, final Integer yearlyGlory);
@@ -84,17 +84,16 @@ public interface ModelConstructorService {
             final Integer skillsGroupPoints,
             final Integer skillsGroupPointsDivide, final Integer skillsPoints,
             final Integer skillsNonCombatPoints, final Dice money,
-            final Collection<NameAndDescriptor> skillsGroup,
+            final Collection<SkillName> skillsGroup,
             final Map<String, Integer> specialtySkills,
-            final Map<NameAndDescriptor, Integer> directedTraits,
-            final Map<NameAndDescriptor, Integer> directedTraitsBase);
+            final Map<SkillName, Integer> directedTraits,
+            final Map<SkillName, Integer> directedTraitsBase);
 
     public HomelandTemplate getHomelandTemplate(final String name,
-            final RegionTemplate region,
-            final Map<NameAndDescriptor, Integer> skills,
+            final RegionTemplate region, final Map<SkillName, Integer> skills,
             final Map<String, Integer> specialtySkills,
-            final Collection<NameAndDescriptor> directedTraits,
-            final Collection<NameAndDescriptor> passions);
+            final Collection<SkillName> directedTraits,
+            final Collection<SkillName> passions);
 
     public Horse getHorse(final String type, final Integer constitution,
             final Integer dexterity, final Integer size,
@@ -120,11 +119,12 @@ public interface ModelConstructorService {
     public Shield getShield(final String name, final String description,
             final Integer armorValue);
 
-    public Skill getSkill(final String name, final Boolean described,
-            final String descriptor, final Boolean combat, final Boolean court,
-            final Boolean knight, final Boolean knowledge);
+    public PendragonSkillBox getSkill(final String name,
+            final Boolean described, final String descriptor,
+            final Boolean combat, final Boolean court, final Boolean knight,
+            final Boolean knowledge);
 
-    public SpecialtySkill getSpecialtySkill(final String name,
+    public SpecialtySkillBox getSpecialtySkill(final String name,
             final Collection<String> skills);
 
     public TextList getTextList(final String name,

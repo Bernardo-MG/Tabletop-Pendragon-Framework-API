@@ -4,16 +4,16 @@ import java.util.Collection;
 import java.util.Map;
 
 import com.wandrell.tabletop.dice.Dice;
-import com.wandrell.tabletop.skill.NameAndDescriptor;
+import com.wandrell.tabletop.skill.SkillName;
 
 public interface CharGenRulesetService {
 
     public Integer getAttributesPoints();
 
-    public Collection<NameAndDescriptor> getCommonPassions();
+    public Collection<SkillName> getCommonPassions();
 
     public Dice getKnightStartingGlory();
 
-    public Map<NameAndDescriptor, Integer> getLandlordPassions();
+    public Map<SkillName, Integer> getLandlordPassions();
 
 }

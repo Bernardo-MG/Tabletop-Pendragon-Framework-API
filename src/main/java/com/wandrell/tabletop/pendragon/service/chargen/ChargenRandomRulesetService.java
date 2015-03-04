@@ -4,7 +4,7 @@ import java.util.Map;
 
 import com.wandrell.tabletop.character.Gender;
 import com.wandrell.tabletop.dice.Dice;
-import com.wandrell.tabletop.skill.NameAndDescriptor;
+import com.wandrell.tabletop.skill.SkillName;
 
 public interface ChargenRandomRulesetService {
 
@@ -14,6 +14,6 @@ public interface ChargenRandomRulesetService {
 
     public Dice getHomelandPassionRoll();
 
-    public Map<NameAndDescriptor, Dice> getLandlordPassions();
+    public Map<SkillName, Dice> getLandlordPassions();
 
 }
