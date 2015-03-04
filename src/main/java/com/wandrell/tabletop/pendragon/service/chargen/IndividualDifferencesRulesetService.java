@@ -4,12 +4,6 @@ import com.wandrell.tabletop.pendragon.model.stats.Skill;
 
 public interface IndividualDifferencesRulesetService {
 
-    public Boolean canBecomeExcellentSkill(final Skill skill);
-
-    public Boolean canBecomeExtraSkill(final Skill skill);
-
-    public Boolean canGetSkillRaise(final Skill skill);
-
     public Integer getExcellentSkillValue();
 
     public Integer getExtraSkillMaxPicks();
@@ -19,5 +13,11 @@ public interface IndividualDifferencesRulesetService {
     public Integer getNoCombatSkillsPoints();
 
     public Integer getSkillRaiseValue();
+
+    public Boolean isAbleToBecomeExcellentSkill(final Skill skill);
+
+    public Boolean isAbleToBecomeExtraSkill(final Skill skill);
+
+    public Boolean isAbleToGetSkillRaise(final Skill skill);
 
 }
