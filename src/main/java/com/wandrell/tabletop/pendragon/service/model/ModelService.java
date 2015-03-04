@@ -16,6 +16,7 @@ import com.wandrell.tabletop.pendragon.model.chargen.FamilyCharacteristicTemplat
 import com.wandrell.tabletop.pendragon.model.chargen.FatherClassTemplate;
 import com.wandrell.tabletop.pendragon.model.chargen.ReligionTemplate;
 import com.wandrell.tabletop.pendragon.model.chargen.region.HomelandTemplate;
+import com.wandrell.tabletop.pendragon.model.chargen.region.RegionTemplate;
 import com.wandrell.tabletop.pendragon.model.glory.FatherClassGlory;
 import com.wandrell.tabletop.pendragon.model.inventory.Armor;
 import com.wandrell.tabletop.pendragon.model.inventory.ArmorType;
@@ -89,9 +90,9 @@ public interface ModelService {
             final Map<NameAndDescriptor, Integer> directedTraitsBase);
 
     public HomelandTemplate getHomelandTemplate(final String name,
+            final RegionTemplate region,
             final Map<NameAndDescriptor, Integer> skills,
             final Map<String, Integer> specialtySkills,
-            final Map<String, Integer> traits,
             final Collection<NameAndDescriptor> directedTraits,
             final Collection<NameAndDescriptor> passions);
 
@@ -107,6 +108,9 @@ public interface ModelService {
 
     public Pet getPet(final String name,
             final IntervalTable<AnimalYearResult> yearResults);
+
+    public RegionTemplate getRegionTemplate(final String name,
+            final Map<String, Integer> traits);
 
     public ReligionTemplate getReligionTemplate(final String name,
             final Collection<String> traits,
