@@ -1,16 +1,19 @@
 package com.wandrell.tabletop.pendragon.service.chargen;
 
-import com.wandrell.tabletop.character.Gender;
-import com.wandrell.tabletop.pendragon.model.stats.Skill;
+import java.util.Collection;
+import java.util.Map;
+
+import com.wandrell.tabletop.dice.Dice;
+import com.wandrell.tabletop.skill.NameAndDescriptor;
 
 public interface CharGenRulesetService {
 
-    public Boolean canAddIndividualDifferenceSkill(final Skill skill,
-            final Gender gender);
+    public Integer getAttributesPoints();
 
-    public Boolean canBecomeExcellentSkill(final Skill skill,
-            final Gender gender);
+    public Collection<NameAndDescriptor> getCommonPassions();
 
-    public Boolean canBecomeExtraSkill(final Skill skill, final Gender gender);
+    public Dice getKnightStartingGlory();
+
+    public Map<NameAndDescriptor, Integer> getLandlordPassions();
 
 }
