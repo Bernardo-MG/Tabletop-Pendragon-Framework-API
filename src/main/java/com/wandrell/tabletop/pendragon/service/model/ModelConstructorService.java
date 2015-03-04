@@ -31,7 +31,7 @@ import com.wandrell.tabletop.pendragon.model.stats.SpecialtySkill;
 import com.wandrell.tabletop.pendragon.model.util.TextList;
 import com.wandrell.tabletop.skill.NameAndDescriptor;
 
-public interface ModelService {
+public interface ModelConstructorService {
 
     public AdditionalBelongings getAdditionaBelongings(final Boolean choose,
             final String moneyName, final Money money,
