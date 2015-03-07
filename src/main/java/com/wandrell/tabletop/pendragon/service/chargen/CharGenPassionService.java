@@ -7,7 +7,7 @@ import com.wandrell.tabletop.valuebox.SkillBox;
 
 public interface CharGenPassionService {
 
-    public Dice getCommonPassionRoll();
+    public Dice getCommonPassionValue();
 
     public Dice getHomelandValue();
 
