@@ -10,13 +10,21 @@ public interface IndividualDifferencesRulesetService {
 
     public Integer getExtraSkillValue();
 
+    public Integer getFamousTraitValue();
+
     public Integer getNoCombatSkillsPoints();
+
+    public Integer getRaises();
+
+    public Integer getSkillPoints();
 
     public Integer getSkillRaiseValue();
 
     public Boolean isAbleToBecomeExcellentSkill(final PendragonSkillBox skill);
 
     public Boolean isAbleToBecomeExtraSkill(final PendragonSkillBox skill);
+
+    public Boolean isAbleToGetPoints(final PendragonSkillBox skill);
 
     public Boolean isAbleToGetSkillRaise(final PendragonSkillBox skill);
 
