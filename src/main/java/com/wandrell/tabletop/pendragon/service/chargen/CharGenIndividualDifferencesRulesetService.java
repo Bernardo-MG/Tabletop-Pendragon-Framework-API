@@ -2,15 +2,13 @@ package com.wandrell.tabletop.pendragon.service.chargen;
 
 import com.wandrell.tabletop.pendragon.model.stats.PendragonSkillBox;
 
-public interface IndividualDifferencesRulesetService {
+public interface CharGenIndividualDifferencesRulesetService {
 
     public Integer getExcellentSkillValue();
 
     public Integer getExtraSkillMaxPicks();
 
     public Integer getExtraSkillValue();
-
-    public Integer getFamousTraitValue();
 
     public Integer getNoCombatSkillsPoints();
 
