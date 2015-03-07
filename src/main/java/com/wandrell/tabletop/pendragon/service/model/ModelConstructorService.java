@@ -27,7 +27,6 @@ import com.wandrell.tabletop.pendragon.model.inventory.Weapon;
 import com.wandrell.tabletop.pendragon.model.manor.AnimalYearResult;
 import com.wandrell.tabletop.pendragon.model.manor.Pet;
 import com.wandrell.tabletop.pendragon.model.stats.PendragonSkillBox;
-import com.wandrell.tabletop.pendragon.model.stats.SpecialtySkillBox;
 import com.wandrell.tabletop.pendragon.model.util.TextList;
 import com.wandrell.tabletop.skill.SkillName;
 
@@ -123,9 +122,6 @@ public interface ModelConstructorService {
             final Boolean described, final String descriptor,
             final Boolean combat, final Boolean court, final Boolean knight,
             final Boolean knowledge);
-
-    public SpecialtySkillBox getSpecialtySkill(final String name,
-            final Collection<String> skills);
 
     public TextList getTextList(final String name,
             final Collection<String> values);

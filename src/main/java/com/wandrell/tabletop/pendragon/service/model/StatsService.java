@@ -2,14 +2,15 @@ package com.wandrell.tabletop.pendragon.service.model;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.skill.SkillName;
+import com.wandrell.tabletop.pendragon.model.stats.PendragonSkillBox;
+import com.wandrell.tabletop.valuebox.SkillBox;
 
 public interface StatsService {
 
-    public Collection<SkillName> getDirectedTraits();
+    public Collection<SkillBox> getDirectedTraits();
 
-    public Collection<SkillName> getPassions();
+    public Collection<SkillBox> getPassions();
 
-    public Collection<SkillName> getSkills();
+    public Collection<PendragonSkillBox> getSkills();
 
 }
