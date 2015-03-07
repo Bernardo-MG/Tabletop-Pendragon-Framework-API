@@ -1,6 +1,6 @@
 package com.wandrell.tabletop.pendragon.service.chargen;
 
-public interface CharGenCommonRulesetService {
+public interface CharGenCommonService {
 
     public Integer getPassionMax();
 

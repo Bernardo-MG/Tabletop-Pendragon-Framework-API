@@ -5,7 +5,7 @@ import java.util.Collection;
 import com.wandrell.tabletop.dice.Dice;
 import com.wandrell.tabletop.valuebox.SkillBox;
 
-public interface CharGenPassionRulesetService {
+public interface CharGenPassionService {
 
     public Dice getCommonPassionRoll();
 
