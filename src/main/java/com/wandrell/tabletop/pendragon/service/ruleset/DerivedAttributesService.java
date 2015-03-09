@@ -7,6 +7,8 @@ public interface DerivedAttributesService {
 
     public Integer getDamage(final PendragonBaseCharacter character);
 
+    public Integer getDexterityRoll(final PendragonBaseCharacter character);
+
     public Integer getDistinctiveFeatures(
             final PendragonHumanCharacter character);
 
