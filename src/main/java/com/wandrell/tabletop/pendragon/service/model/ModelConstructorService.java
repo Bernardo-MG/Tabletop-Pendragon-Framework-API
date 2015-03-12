@@ -7,6 +7,7 @@ import com.wandrell.tabletop.dice.Dice;
 import com.wandrell.tabletop.interval.Interval;
 import com.wandrell.tabletop.interval.IntervalTable;
 import com.wandrell.tabletop.pendragon.model.character.Horse;
+import com.wandrell.tabletop.pendragon.model.character.background.Religion;
 import com.wandrell.tabletop.pendragon.model.chargen.AdditionalBelongings;
 import com.wandrell.tabletop.pendragon.model.chargen.AdditionalBelongingsTable;
 import com.wandrell.tabletop.pendragon.model.chargen.CultureCharacterTemplate;
@@ -14,16 +15,15 @@ import com.wandrell.tabletop.pendragon.model.chargen.CultureTemplate;
 import com.wandrell.tabletop.pendragon.model.chargen.FamilyCharacteristicTable;
 import com.wandrell.tabletop.pendragon.model.chargen.FamilyCharacteristicTemplate;
 import com.wandrell.tabletop.pendragon.model.chargen.FatherClassTemplate;
-import com.wandrell.tabletop.pendragon.model.chargen.ReligionTemplate;
 import com.wandrell.tabletop.pendragon.model.chargen.region.HomelandTemplate;
 import com.wandrell.tabletop.pendragon.model.chargen.region.RegionTemplate;
 import com.wandrell.tabletop.pendragon.model.glory.FatherClassGlory;
-import com.wandrell.tabletop.pendragon.model.inventory.Armor;
-import com.wandrell.tabletop.pendragon.model.inventory.ArmorType;
 import com.wandrell.tabletop.pendragon.model.inventory.Item;
 import com.wandrell.tabletop.pendragon.model.inventory.Money;
-import com.wandrell.tabletop.pendragon.model.inventory.Shield;
-import com.wandrell.tabletop.pendragon.model.inventory.Weapon;
+import com.wandrell.tabletop.pendragon.model.inventory.armor.Armor;
+import com.wandrell.tabletop.pendragon.model.inventory.armor.ArmorType;
+import com.wandrell.tabletop.pendragon.model.inventory.armor.Shield;
+import com.wandrell.tabletop.pendragon.model.inventory.weapon.Weapon;
 import com.wandrell.tabletop.pendragon.model.manor.AnimalYearResult;
 import com.wandrell.tabletop.pendragon.model.manor.Pet;
 import com.wandrell.tabletop.pendragon.model.stats.PendragonSkillBox;
@@ -110,7 +110,7 @@ public interface ModelConstructorService {
     public RegionTemplate getRegionTemplate(final String name,
             final Map<String, Integer> traits);
 
-    public ReligionTemplate getReligionTemplate(final String name,
+    public Religion getReligion(final String name,
             final Collection<String> traits,
             final Map<String, Integer> bonusDerived, final Integer bonusArmor,
             final Integer bonusDamage, final Integer bonusDamageDice);
