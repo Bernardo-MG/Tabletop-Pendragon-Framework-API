@@ -134,9 +134,9 @@
 			<version>${tabletop.version}</version>
 		</dependency>
 		<dependency>
-			<!-- Tabletop's Pendragon API -->
+			<!-- Tabletop's Pendragon Model API -->
 			<groupId>com.wandrell.tabletop</groupId>
-			<artifactId>tabletop-pendragon-api</artifactId>
+			<artifactId>tabletop-pendragon-model-api</artifactId>
 			<version>${tabletop.version}</version>
 		</dependency>
 		<dependency>
