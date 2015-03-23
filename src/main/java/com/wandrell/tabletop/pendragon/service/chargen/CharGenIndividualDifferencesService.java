@@ -1,6 +1,6 @@
 package com.wandrell.tabletop.pendragon.service.chargen;
 
-import com.wandrell.tabletop.pendragon.model.stats.PendragonSkillBox;
+import com.wandrell.tabletop.pendragon.model.character.stats.PendragonSkillBox;
 
 public interface CharGenIndividualDifferencesService {
 

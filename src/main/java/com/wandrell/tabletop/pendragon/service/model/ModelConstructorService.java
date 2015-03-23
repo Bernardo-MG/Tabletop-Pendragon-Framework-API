@@ -8,6 +8,7 @@ import com.wandrell.tabletop.interval.Interval;
 import com.wandrell.tabletop.interval.IntervalTable;
 import com.wandrell.tabletop.pendragon.model.character.Horse;
 import com.wandrell.tabletop.pendragon.model.character.background.Religion;
+import com.wandrell.tabletop.pendragon.model.character.stats.PendragonSkillBox;
 import com.wandrell.tabletop.pendragon.model.chargen.AdditionalBelongings;
 import com.wandrell.tabletop.pendragon.model.chargen.AdditionalBelongingsTable;
 import com.wandrell.tabletop.pendragon.model.chargen.CultureCharacterTemplate;
@@ -26,7 +27,6 @@ import com.wandrell.tabletop.pendragon.model.inventory.armor.Shield;
 import com.wandrell.tabletop.pendragon.model.inventory.weapon.Weapon;
 import com.wandrell.tabletop.pendragon.model.manor.AnimalYearResult;
 import com.wandrell.tabletop.pendragon.model.manor.Pet;
-import com.wandrell.tabletop.pendragon.model.stats.PendragonSkillBox;
 import com.wandrell.tabletop.pendragon.model.util.TextList;
 import com.wandrell.tabletop.skill.SkillName;
 
