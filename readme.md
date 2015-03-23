@@ -8,6 +8,8 @@ Currently the project has no webpage.
 The project has a [Maven site][] and [Javadoc page][] with the information from the
 latest release.
 
+There is also a [development Maven site][] and a [development Javadoc page][], generated from the latest development snapshot.
+
 ### Status
 The project is still under development, so expect a certain degree of volatility.
 
@@ -43,6 +45,8 @@ The continuous integration information can be found at the [project CI page][] b
 ## License
 The project is released under version 2.0 of the [Apache License][].
 
+[development Javadoc page]: http://docs.wandrell.com/development/maven/tabletop-pendragon-framework-api/apidocs
+[development Maven site]: http://docs.wandrell.com/development/maven/tabletop-pendragon-framework-api
 [Apache License]: http://www.apache.org/licenses/LICENSE-2.0
 [Javadoc page]: http://docs.wandrell.com/maven/tabletop-pendragon-framework-api/apidocs
 [Maven site]: http://docs.wandrell.com/maven/tabletop-pendragon-framework-api
