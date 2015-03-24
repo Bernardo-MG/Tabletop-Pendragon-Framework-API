@@ -31,7 +31,7 @@ The code can be found at the GitHub [project page][].
 
 To acquire it through Git use the following clone URI:
 
-`git clone https://github.com/Bernardo-MG/Tabletop-Pendragon-Framework-API.git`
+`git clone https://github.com/Bernardo-MG/Tabletop-Pendragon-Ruleset-API.git`
 
 #### Repository
 Releases can be found in the [releases repository][] on Bintray.
@@ -45,12 +45,12 @@ The continuous integration information can be found at the [project CI page][] b
 ## License
 The project is released under version 2.0 of the [Apache License][].
 
-[development Javadoc page]: http://docs.wandrell.com/development/maven/tabletop-pendragon-framework-api/apidocs
-[development Maven site]: http://docs.wandrell.com/development/maven/tabletop-pendragon-framework-api
+[development Javadoc page]: http://docs.wandrell.com/development/maven/tabletop-pendragon-ruleset-api/apidocs
+[development Maven site]: http://docs.wandrell.com/development/maven/tabletop-pendragon-ruleset-api
 [Apache License]: http://www.apache.org/licenses/LICENSE-2.0
-[Javadoc page]: http://docs.wandrell.com/maven/tabletop-pendragon-framework-api/apidocs
-[Maven site]: http://docs.wandrell.com/maven/tabletop-pendragon-framework-api
-[project CI page]: https://travis-ci.org/Bernardo-MG/Tabletop-Pendragon-Framework-API
-[project issues page]: https://github.com/Bernardo-MG/Tabletop-Pendragon-Framework-API/issues
-[project page]: http://github.com/Bernardo-MG/Tabletop-Pendragon-Framework-API
-[releases repository]: http://dl.bintray.com/bernardo-mg/tabletop-pendragon-framework-api
+[Javadoc page]: http://docs.wandrell.com/maven/tabletop-pendragon-ruleset-api/apidocs
+[Maven site]: http://docs.wandrell.com/maven/tabletop-pendragon-ruleset-api
+[project CI page]: https://travis-ci.org/Bernardo-MG/Tabletop-Pendragon-Ruleset-API
+[project issues page]: https://github.com/Bernardo-MG/Tabletop-Pendragon-Ruleset-API/issues
+[project page]: http://github.com/Bernardo-MG/Tabletop-Pendragon-Ruleset-API
+[releases repository]: http://dl.bintray.com/bernardo-mg/tabletop-pendragon-ruleset-api

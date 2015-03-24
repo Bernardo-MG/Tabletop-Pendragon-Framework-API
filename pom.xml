@@ -9,9 +9,9 @@
 	<version>0.1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>Tabletop's Pendragon framework API</name>
+	<name>Tabletop's Pendragon Ruleset API</name>
 	<url />
-	<description>Framework API library for the RPG Pendragon, part of the Tabletop project.</description>
+	<description>Ruleset API library for the RPG Pendragon, part of the Tabletop project.</description>
 
 	<licenses>
 		<license>
