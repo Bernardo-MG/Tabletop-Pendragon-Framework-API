@@ -1,5 +1,5 @@
-# Tabletop's Pendragon API library
-API defining an extension to use the Tabletop project for the RPG Pendragon.
+# Tabletop's Pendragon Ruleset API
+Ruleset API for the RPG Pendragon.
 
 ### Webpage
 Currently the project has no webpage.
