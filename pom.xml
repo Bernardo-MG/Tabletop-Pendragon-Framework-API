@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.wandrell.tabletop</groupId>
-	<artifactId>tabletop-pendragon-framework-ruleset-api</artifactId>
+	<artifactId>tabletop-pendragon-ruleset-api</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -22,20 +22,20 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:git:https://github.com/Bernardo-MG/Tabletop-Pendragon-Framework-Ruleset-API.git</connection>
-		<developerConnection>scm:git:https://github.com/Bernardo-MG/Tabletop-Pendragon-Framework-Ruleset-API.git</developerConnection>
+		<connection>scm:git:https://github.com/Bernardo-MG/Tabletop-Pendragon-Ruleset-API.git</connection>
+		<developerConnection>scm:git:https://github.com/Bernardo-MG/Tabletop-Pendragon-Ruleset-API.git</developerConnection>
 		<tag>head</tag>
-		<url>https://github.com/Bernardo-MG/Tabletop-Pendragon-Framework-Ruleset-API</url>
+		<url>https://github.com/Bernardo-MG/Tabletop-Pendragon-Ruleset-API</url>
 	</scm>
 
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/Bernardo-MG/Tabletop-Pendragon-Framework-Ruleset-API/issues</url>
+		<url>https://github.com/Bernardo-MG/Tabletop-Pendragon-Ruleset-API/issues</url>
 	</issueManagement>
 
 	<ciManagement>
 		<system>Travis CI</system>
-		<url>https://travis-ci.org/Bernardo-MG/Tabletop-Pendragon-Framework-Ruleset-API</url>
+		<url>https://travis-ci.org/Bernardo-MG/Tabletop-Pendragon-Ruleset-API</url>
 		<notifiers />
 	</ciManagement>
 
@@ -44,7 +44,7 @@
 			<uniqueVersion>false</uniqueVersion>
 			<id>wandrell-releases</id>
 			<name>Wandrell releases repository</name>
-			<url>https://api.bintray.com/maven/bernardo-mg/maven/tabletop-pendragon-framework-ruleset-api</url>
+			<url>https://api.bintray.com/maven/bernardo-mg/maven/tabletop-pendragon-ruleset-api</url>
 		</repository>
 		<snapshotRepository>
 			<uniqueVersion>true</uniqueVersion>
@@ -64,7 +64,7 @@
 				<site>
 					<id>wandrell-site</id>
 					<name>Wandrell Maven sites</name>
-					<url>ftp://docs.wandrell.com/tabletop-framework-api</url>
+					<url>ftp://docs.wandrell.com/tabletop-api</url>
 				</site>
 			</distributionManagement>
 		</profile>
@@ -74,7 +74,7 @@
 				<site>
 					<id>wandrell-site-development</id>
 					<name>Wandrell Development Maven sites</name>
-					<url>ftp://docs.wandrell.com/tabletop-framework-api</url>
+					<url>ftp://docs.wandrell.com/tabletop-api</url>
 				</site>
 			</distributionManagement>
 		</profile>
@@ -109,7 +109,7 @@
 		<java.version.source>1.7</java.version.source>
 		<java.version.target>${java.version.source}</java.version.target>
 		<!-- Manifest data -->
-		<manifest.name>com/wandrell/tabletop/pendragon/framework/ruleset/api</manifest.name>
+		<manifest.name>com/wandrell/tabletop/pendragon/ruleset/api</manifest.name>
 		<!-- Dependencies versions -->
 		<tabletop.version>0.1.0-SNAPSHOT</tabletop.version>
 		<testng.version>6.8.8</testng.version>
