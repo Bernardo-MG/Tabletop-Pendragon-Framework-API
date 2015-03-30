@@ -8,6 +8,8 @@ import com.wandrell.tabletop.interval.Interval;
 import com.wandrell.tabletop.interval.IntervalTable;
 import com.wandrell.tabletop.pendragon.model.character.Horse;
 import com.wandrell.tabletop.pendragon.model.character.background.Religion;
+import com.wandrell.tabletop.pendragon.model.character.stats.DerivedAttributesHolder;
+import com.wandrell.tabletop.pendragon.model.character.stats.HumanAttributesHolder;
 import com.wandrell.tabletop.pendragon.model.character.stats.PendragonSkillBox;
 import com.wandrell.tabletop.pendragon.model.character.stats.TraitsHolder;
 import com.wandrell.tabletop.pendragon.model.chargen.background.CultureCharacterTemplate;
@@ -52,7 +54,7 @@ public interface ModelConstructorService {
             final Integer dexModifier, final Boolean heavyLoad);
 
     public CultureCharacterTemplate getCultureCharacterTemplate(
-            final Collection<SkillBox> attributesBonus,
+            final HumanAttributesHolder attributesBonus,
             final Map<String, Dice> attributesRandom,
             final Collection<SkillBox> skillsBonus,
             final Collection<SkillBox> specialtySkills,
@@ -74,7 +76,7 @@ public interface ModelConstructorService {
             final Map<Interval, FamilyCharacteristicTemplate> intervals);
 
     public FamilyCharacteristicTemplate getFamilyCharacteristicTemplate(
-            final String name, final Collection<SkillBox> attributes,
+            final String name, final HumanAttributesHolder attributes,
             final Collection<SkillBox> skills);
 
     public FatherClassGlory getFatherClassGlory(final String name,
@@ -113,8 +115,9 @@ public interface ModelConstructorService {
 
     public Religion getReligion(final String name,
             final Collection<String> traits,
-            final Collection<SkillBox> bonusDerived, final Integer bonusArmor,
-            final Integer bonusDamage, final Integer bonusDamageDice);
+            final DerivedAttributesHolder bonusDerived,
+            final Integer bonusArmor, final Integer bonusDamage,
+            final Integer bonusDamageDice);
 
     public Shield getShield(final String name, final String description,
             final Integer armorValue);
