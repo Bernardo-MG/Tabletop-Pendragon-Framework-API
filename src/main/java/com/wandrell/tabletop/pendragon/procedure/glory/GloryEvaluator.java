@@ -1,6 +1,6 @@
 package com.wandrell.tabletop.pendragon.procedure.glory;
 
-import com.wandrell.tabletop.pendragon.model.character.PendragonBaseCharacter;
+import com.wandrell.tabletop.pendragon.model.character.PendragonCharacter;
 
 public interface GloryEvaluator {
 
@@ -8,6 +8,6 @@ public interface GloryEvaluator {
 
     public String getName();
 
-    public Boolean isApplicable(final PendragonBaseCharacter character);
+    public Boolean isApplicable(final PendragonCharacter character);
 
 }
