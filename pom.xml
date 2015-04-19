@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.wandrell.tabletop</groupId>
-	<artifactId>tabletop-pendragon-ruleset-api</artifactId>
+	<artifactId>pendragon-ruleset-api</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -157,7 +157,7 @@
 		<dependency>
 			<!-- Tabletop's Pendragon Model API -->
 			<groupId>com.wandrell.tabletop</groupId>
-			<artifactId>tabletop-pendragon-model-api</artifactId>
+			<artifactId>pendragon-model-api</artifactId>
 			<version>${tabletop.version}</version>
 		</dependency>
 		<dependency>
