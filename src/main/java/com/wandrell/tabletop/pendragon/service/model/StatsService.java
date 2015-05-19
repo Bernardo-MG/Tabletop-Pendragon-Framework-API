@@ -3,7 +3,7 @@ package com.wandrell.tabletop.pendragon.service.model;
 import java.util.Collection;
 
 import com.wandrell.tabletop.pendragon.model.character.stats.PendragonSkillBox;
-import com.wandrell.tabletop.valuebox.SkillBox;
+import com.wandrell.tabletop.stat.valuebox.SkillBox;
 
 public interface StatsService {
 

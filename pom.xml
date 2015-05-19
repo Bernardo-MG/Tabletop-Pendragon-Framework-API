@@ -111,6 +111,7 @@
 		<!-- Manifest data -->
 		<manifest.name>com/wandrell/tabletop/pendragon/ruleset/api</manifest.name>
 		<!-- Dependencies versions -->
+		<tabletop.stats.version>0.1.0-SNAPSHOT</tabletop.stats.version>
 		<tabletop.version>0.1.0-SNAPSHOT</tabletop.version>
 		<testng.version>6.8.8</testng.version>
 		<!-- Plugins versions -->
@@ -149,15 +150,21 @@
 
 	<dependencies>
 		<dependency>
-			<!-- Tabletop API -->
+			<!-- Tabletop Stats -->
 			<groupId>com.wandrell.tabletop</groupId>
-			<artifactId>tabletop-api</artifactId>
-			<version>${tabletop.version}</version>
+			<artifactId>stats</artifactId>
+			<version>${tabletop.stats.version}</version>
 		</dependency>
 		<dependency>
 			<!-- Tabletop's Pendragon Model API -->
 			<groupId>com.wandrell.tabletop</groupId>
 			<artifactId>pendragon-model-api</artifactId>
+			<version>${tabletop.version}</version>
+		</dependency>
+		<dependency>
+			<!-- Tabletop's Pendragon Model -->
+			<groupId>com.wandrell.tabletop</groupId>
+			<artifactId>pendragon-model</artifactId>
 			<version>${tabletop.version}</version>
 		</dependency>
 		<dependency>
