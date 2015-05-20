@@ -33,7 +33,7 @@ import com.wandrell.tabletop.pendragon.model.inventory.weapon.Weapon;
 import com.wandrell.tabletop.pendragon.model.manor.AnimalYearResult;
 import com.wandrell.tabletop.pendragon.model.manor.Pet;
 import com.wandrell.tabletop.pendragon.model.util.TextList;
-import com.wandrell.tabletop.stat.valuebox.SkillBox;
+import com.wandrell.tabletop.stats.valuebox.SkillBox;
 
 public interface ModelConstructorService {
 

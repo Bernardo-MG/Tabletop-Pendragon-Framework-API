@@ -3,7 +3,7 @@ package com.wandrell.tabletop.pendragon.service.chargen;
 import java.util.Collection;
 
 import com.wandrell.tabletop.dice.Dice;
-import com.wandrell.tabletop.stat.valuebox.SkillBox;
+import com.wandrell.tabletop.stats.valuebox.SkillBox;
 
 public interface CharGenPassionService {
 
