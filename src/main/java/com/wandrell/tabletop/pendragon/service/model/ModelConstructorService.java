@@ -125,9 +125,8 @@ public interface ModelConstructorService {
             final Integer armorValue);
 
     public PendragonSkillBox getSkill(final String name,
-            final Boolean described, final String descriptor,
-            final Boolean combat, final Boolean court, final Boolean knight,
-            final Boolean knowledge);
+            final String descriptor, final Boolean combat, final Boolean court,
+            final Boolean knight, final Boolean knowledge);
 
     public TextList getTextList(final String name,
             final Collection<String> values);
