@@ -1,19 +1,19 @@
 package com.wandrell.tabletop.pendragon.service.chargen;
 
-import com.wandrell.tabletop.dice.Dice;
+import com.wandrell.tabletop.dice.notation.DiceFormula;
 
 public interface CharGenAttributesService {
 
-    public Dice getAppearanceRoll();
+    public DiceFormula getAppearanceRoll();
 
     public Integer getAttributesPoints();
 
-    public Dice getConstitutionRoll();
+    public DiceFormula getConstitutionRoll();
 
-    public Dice getDexterityRoll();
+    public DiceFormula getDexterityRoll();
 
-    public Dice getSizeRoll();
+    public DiceFormula getSizeRoll();
 
-    public Dice getStrengthRoll();
+    public DiceFormula getStrengthRoll();
 
 }

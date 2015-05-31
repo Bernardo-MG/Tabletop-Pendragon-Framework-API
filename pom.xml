@@ -113,6 +113,7 @@
 		<!-- Dependencies versions -->
 		<tabletop.stats.version>0.1.0-SNAPSHOT</tabletop.stats.version>
 		<tabletop.version>0.1.0-SNAPSHOT</tabletop.version>
+		<tabletop.dice.version>0.1.0-SNAPSHOT</tabletop.dice.version>
 		<testng.version>6.8.8</testng.version>
 		<!-- Plugins versions -->
 		<plugin.checkstyle.version>2.13</plugin.checkstyle.version>
@@ -149,6 +150,12 @@
 	</repositories>
 
 	<dependencies>
+		<dependency>
+			<!-- Tabletop Dice -->
+			<groupId>com.wandrell.tabletop</groupId>
+			<artifactId>dice</artifactId>
+			<version>${tabletop.stats.version}</version>
+		</dependency>
 		<dependency>
 			<!-- Tabletop Stats -->
 			<groupId>com.wandrell.tabletop</groupId>

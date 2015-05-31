@@ -3,7 +3,7 @@ package com.wandrell.tabletop.pendragon.service.model;
 import java.util.Collection;
 import java.util.Map;
 
-import com.wandrell.tabletop.dice.Dice;
+import com.wandrell.tabletop.dice.notation.DiceFormula;
 import com.wandrell.tabletop.interval.Interval;
 import com.wandrell.tabletop.interval.IntervalTable;
 import com.wandrell.tabletop.pendragon.model.character.Horse;
@@ -39,7 +39,7 @@ public interface ModelConstructorService {
 
     public AdditionalBelongings getAdditionaBelongings(final Boolean choose,
             final String moneyName, final Money money,
-            final String rerollTable, final Collection<Dice> rerolls,
+            final String rerollTable, final Collection<DiceFormula> rerolls,
             final Collection<Horse> horses, final Collection<Item> items,
             final Collection<Pet> pets, final Collection<Shield> shields,
             final Collection<Weapon> weapons);
@@ -87,7 +87,7 @@ public interface ModelConstructorService {
     public FatherClassTemplate getFatherClassTemplate(final String name,
             final Integer skillsGroupPoints,
             final Integer skillsGroupPointsDivide, final Integer skillsPoints,
-            final Integer skillsNonCombatPoints, final Dice money,
+            final Integer skillsNonCombatPoints, final DiceFormula money,
             final Collection<SkillBox> skillsGroup,
             final Collection<SkillBox> specialtySkills,
             final Collection<SkillBox> directedTraits,
